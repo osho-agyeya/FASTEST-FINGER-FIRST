@@ -1,0 +1,15 @@
+--import std_logic from the IEEE library
+library ieee;
+use ieee.std_logic_1164.all;
+
+--ENTITY DECLARATION: name, inputs, outputs
+entity nandGate is
+   port( A, B : in std_logic;
+            F : out std_logic);
+end nandGate;
+
+--FUNCTIONAL DESCRIPTION: how the NAND Gate works
+architecture func of nandGate is 
+begin
+   F <= A nand B;
+end func;
